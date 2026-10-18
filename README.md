@@ -12,7 +12,7 @@
 | [**dsh-client-ui-aqua**](https://github.com/huangfuren/dsh-client-ui-aqua) | 玻璃拟态主题：磨砂玻璃材质 + 流体 WebGL 背景或自定义壁纸，模糊 / 磨砂 / 亮度可调 | 客户端 UI | 1.1.0 |
 | [**dsh-client-ui-balance**](https://github.com/huangfuren/dsh-client-ui-balance) | 会话头部实时显示 provider API 余额 | 客户端 UI | 0.4.0 |
 | [**dsh-localsend**](https://github.com/huangfuren/dsh-localsend) | 局域网传文件：LocalSend v2 协议发送、临时 HTTP 下载链接分享、SMB 指定目录推送 | host 工具 | 0.5.0 |
-| [**dsh-sync**](https://github.com/huangfuren/dsh-sync) | 把本机 dsh 配置导出成可移植 bundle（settings / 凭据可选 / 插件源码）并生成自安装脚本 | host 工具 | 0.3.1 |
+| [**dsh-sync**](https://github.com/huangfuren/dsh-sync) | 把一台机器上用过的 dsh 全量搬到另一台：会话历史 / 工作区记录 / skills 链接 / 插件声明，按新路径改写后逐项核对 | host 工具 | 0.4.0 |
 | [**my-skills**](https://github.com/huangfuren/my-skills) | 自用 skills 集合（给 AI 助手用的 `SKILL.md` + `references/` 结构）：目前含手写 SVG 架构图 / 网络拓扑图 / 流程图的作图规范 | skills | — |
 
 ---
