@@ -6,13 +6,13 @@
 
 | 项目 | 做什么 | 形态 | 版本 |
 | --- | --- | --- | --- |
-| [**dsh-outline**](https://github.com/huangfuren/dsh-outline) | 在对话里搜索 / 读取 / 写入自建 Outline 知识库。13 个 `outline_*` 工具；写操作走目录白名单 + 逐次审批，可写目录留空即全库只读 | host 工具 | 0.8.3 |
-| [**dsh-conversation**](https://github.com/huangfuren/dsh-conversation) | 会话大纲面板：以你的每次提问为根节点，把回复里的 Markdown 标题挂成子树；搜索、书签、导出、阅读位置记忆 | 客户端 UI | 1.3.1 |
+| [**dsh-outline**](https://github.com/huangfuren/dsh-outline) | 在对话里搜索 / 读取 / 写入自建 Outline 知识库。13 个 `outline_*` 工具；写操作走目录白名单 + 逐次审批，可写目录留空即全库只读；兼容 Outline v0.79 ~ v1.12+ | host 工具 | 0.9.1 |
+| [**dsh-conversation**](https://github.com/huangfuren/dsh-conversation) | 会话大纲面板：以你的每次提问为根节点，把回复里的 Markdown 标题挂成子树；搜索、书签、导出、阅读位置记忆；左右停靠，背景透明度可调 | 客户端 UI | 1.4.0 |
 | [**dsh-bg-plugin**](https://github.com/huangfuren/dsh-bg-plugin) | 全窗口背景图：上传、实时预览、透明度 / 亮度 / 遮罩 / 模糊 / 位置 / 填充，配置落盘持久化 | host + client 单包 | 1.3.0 |
 | [**dsh-client-ui-aqua**](https://github.com/huangfuren/dsh-client-ui-aqua) | 玻璃拟态主题：磨砂玻璃材质 + 流体 WebGL 背景或自定义壁纸，模糊 / 磨砂 / 亮度可调 | 客户端 UI | 1.1.0 |
 | [**dsh-client-ui-balance**](https://github.com/huangfuren/dsh-client-ui-balance) | 会话头部实时显示 provider API 余额，点开看可用 / 赠送 / 充值明细 | 客户端 UI | 0.4.1 |
 | [**dsh-localsend**](https://github.com/huangfuren/dsh-localsend) | 局域网传文件：LocalSend v2 协议发送、临时 HTTP 下载链接分享、SMB 指定目录推送 | host 工具 | 0.5.0 |
-| [**dsh-sync**](https://github.com/huangfuren/dsh-sync) | 把一台机器上用过的 dsh 全量搬到另一台：会话历史 / 工作区项目代码 / skills 链接 / 插件声明，按新路径改写后 15 项核对；也可局域网内配对直传、落地并核验（设置页卡片里可扫描设备、选中即发起迁移；旧机导出即起发送端，新机填码即拉，落地自动重装依赖；每笔落地变动记账，`dshsync_undo` 可逐层回滚；往已用过的机器再迁一次时先出分歧清单） | host + client 单包 | 0.18.0 |
+| [**dsh-sync**](https://github.com/huangfuren/dsh-sync) | 把一台机器上用过的 dsh 全量搬到另一台：会话历史 / 工作区项目代码 / skills 链接 / 插件声明，按新路径改写后 15 项核对；也可局域网内配对直传、落地并核验（设置页卡片里可扫描设备、选中即发起迁移；旧机导出即起发送端，新机填码即拉，落地自动重装依赖；每笔落地变动记账，`dshsync_undo` 可逐层回滚；往已用过的机器再迁一次时先出分歧清单） | host + client 单包 | 0.18.1 |
 | [**my-skills**](https://github.com/huangfuren/my-skills) | 自用 skills 集合（给 AI 助手用的 `SKILL.md` + `references/` 结构）：手写 SVG 作图规范；DSH 插件开发知识库（骨架 / 数据通道 / 界面落位 / 兼容门控 / 循环纪律） | skills | — |
 
 ---
