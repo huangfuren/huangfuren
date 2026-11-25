@@ -1,4 +1,4 @@
-自己写的一些小工具，放在这里。
+自己写的一些小工具，基本都围着 **DeepSeek Harness**（`dsh`）转：给它的 Web 界面换皮肤、加面板、接知识库，或者把一台机器上的整套配置搬到另一台。
 
 ---
 
@@ -7,14 +7,25 @@
 | 项目 | 做什么 | 形态 | 版本 |
 | --- | --- | --- | --- |
 | [**dsh-outline**](https://github.com/huangfuren/dsh-outline) | 在对话里搜索 / 读取 / 写入自建 Outline 知识库。13 个 `outline_*` 工具；写操作走目录白名单 + 逐次审批，可写目录留空即全库只读；兼容 Outline v0.79 ~ v1.12+ | host 工具 | 0.9.2 |
-| [**dsh-conversation**](https://github.com/huangfuren/dsh-conversation) | 会话大纲面板：以你的每次提问为根节点，把回复里的 Markdown 标题挂成子树；搜索、书签、导出、阅读位置记忆；左右停靠，背景透明度可调，窄栏时按钮自动收成图标 | 客户端 UI | 1.5.8 |
-| [**dsh-bg-plugin**](https://github.com/huangfuren/dsh-bg-plugin) | 全窗口背景图：上传、实时预览、透明度 / 亮度 / 遮罩 / 模糊 / 位置 / 填充，配置落盘持久化 | host + client 单包 | 1.3.1 |
-| [**dsh-client-ui-aqua**](https://github.com/huangfuren/dsh-client-ui-aqua) | 玻璃拟态主题：磨砂玻璃材质 + 流体 WebGL 背景或自定义壁纸，模糊 / 磨砂 / 亮度可调 | 客户端 UI | 1.1.1 |
-| [**dsh-client-ui-balance**](https://github.com/huangfuren/dsh-client-ui-balance) | 会话头部实时显示 provider API 余额，点开看可用 / 赠送 / 充值明细 | 客户端 UI | 0.4.2 |
-| [**dsh-localsend**](https://github.com/huangfuren/dsh-localsend) | 局域网传文件：LocalSend v2 协议发送、临时 HTTP 下载链接分享、SMB 指定目录推送 | host 工具 | 0.5.1 |
-| [**dsh-sync**](https://github.com/huangfuren/dsh-sync) | 把一台机器上用过的 dsh 全量搬到另一台：会话历史 / 工作区项目代码 / skills 链接 / 插件声明，按新路径改写后 15 项核对；也可局域网内配对直传、落地并核验（设置页卡片里可扫描设备、选中即发起迁移；旧机导出即起发送端，新机填码即拉，落地自动重装依赖；每笔落地变动记账，`dshsync_undo` 可逐层回滚；往已用过的机器再迁一次时先出分歧清单） | host + client 单包 | 0.19.1 |
-| [**my-skills**](https://github.com/huangfuren/my-skills) | 自用 skills 集合（给 AI 助手用的 `SKILL.md` + `references/` 结构）：手写 SVG 作图规范；DSH 插件开发知识库（骨架 / 数据通道 / 界面落位 / 兼容门控 / 循环纪律） | skills | — |
-| [**ops-atlas**](https://github.com/huangfuren/ops-atlas) | 个人运维知识库：从 Linux 到 SRE 的教材式文档，按板块组织，配手写 SVG 架构图；顺序读当教材、按册查当手册、按症状反查当字典 | 知识库 | — |
+| [**dsh-conversation**](https://github.com/huangfuren/dsh-conversation) | 会话大纲面板：以你的每次提问为根节点，把回复里的 Markdown 标题挂成子树；搜索、书签、导出、阅读位置记忆；左右停靠，背景透明度可调，窄栏时按钮自动收成图标 | 客户端 UI | 1.5.9 |
+| [**dsh-bg-plugin**](https://github.com/huangfuren/dsh-bg-plugin) | 全窗口背景图：上传、实时预览、透明度 / 亮度 / 遮罩 / 模糊 / 位置 / 填充，配置落盘持久化 —— 图片存宿主机文件系统，清浏览器数据或重装都还在 | host + client 单包 | 1.3.1 |
+| [**dsh-client-ui-aqua**](https://github.com/huangfuren/dsh-client-ui-aqua) | 玻璃拟态主题：磨砂玻璃材质 + 流体 WebGL 背景或自定义壁纸，模糊 / 磨砂 / 亮度可调，统一圆角与动效 | 客户端 UI | 1.1.1 |
+| [**dsh-client-ui-balance**](https://github.com/huangfuren/dsh-client-ui-balance) | 会话头部实时显示 provider API 余额，点开看可用 / 赠送 / 充值明细；余额经插件自带的同源 Host 路由读取 | 客户端 UI | 0.4.2 |
+| [**dsh-localsend**](https://github.com/huangfuren/dsh-localsend) | 局域网传文件：LocalSend v2 协议发送、临时 HTTP 下载链接分享（接收方无需装任何软件）、SMB 指定目录推送；目标可存成 profile，一次配置反复直推 | host 工具 | 0.5.1 |
+| [**dsh-sync**](https://github.com/huangfuren/dsh-sync) | 把一台机器上用过的 dsh 全量搬到另一台：会话历史 / 工作区项目代码 / skills 链接 / 插件声明，按新路径改写后 15 项核对；也可局域网内配对直传、落地并核验；每笔落地变动记账，`dshsync_undo` 可逐层回滚 | host + client 单包 | 0.19.1 |
+| [**my-skills**](https://github.com/huangfuren/my-skills) | 自用 skills 集合（`SKILL.md` + `references/` 结构）：DSH 插件开发知识库、手写 SVG 作图规范、方案盘问、群消息整理、skill 编写方法论，前端类归在 `frontend/` | skills | — |
+| [**ops-atlas**](https://github.com/huangfuren/ops-atlas) | 运维工程师知识库：从 Linux 到 SRE 的教材式文档，19 个板块、173 册正文、130 张手写 SVG 配图；顺序读当教材、按册查当手册、按症状反查当字典 | 知识库 | — |
+
+---
+
+## 装一个试试
+
+```bash
+# 从 tag 安装（以 dsh-conversation 为例）
+dsh plugin --profile web add github:huangfuren/dsh-conversation#v1.5.9
+```
+
+每个仓库的 README 里有各自的安装命令、兼容范围与配置项。
 
 ---
 
